@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(45deg, #D4145A, #FBB03B);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.box {
+    padding: 15px;
+    min-width: 100px;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 0 12px 7px #000000;
+    border-radius: 10px;
+}
+
+.ques {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.ans {
+    padding: 5px;
+}
+
+.box1 {
+    display: flex;
+    gap: 10px;
+    box-shadow: 5px 5px 5px 2px;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    background-color: rgb(255, 199, 199);
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.box1:active,
+.box1:hover {
+    box-shadow: 0 0 5px 2px #3d3a3b;
+    /* background: linear-gradient(to left, #D4145A,  #FBB03B); */
+
+}
+
+.box2 {
+    padding-left: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.nxt {
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(255, 199, 199);
+    margin-bottom: 15px;
+
+}
+
+.nxt:active:hover {
+    transform: scale(0.95);
+    background-color: #3d3a3b;
+}
+
+.win {
+    display: none;
+}
+
+.win h1 {
+    font-family: cursive Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+}
+
+
+
+/* responsiveness */
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .box {
+        width: 90%; /* Adjust the width to fit the mobile screen */
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    .ques {
+        font-size: 1.2rem; /* Slightly larger font size for questions */
+    }
+
+    .box1 {
+        flex-direction: column; /* Stack options vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .nxt {
+        width: 80%; /* Full width button for mobile */
+        height: 45px; /* Slightly smaller height */
+    }
+
+    .win h1 {
+        font-size: 1.5rem; /* Larger title for visibility */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    .box {
+        width: 80%; /* Wider box for tablets */
+        padding: 15px; /* Standard padding */
+    }
+
+    .ques {
+        font-size: 1.3rem; /* Slightly larger font size */
+    }
+
+    .box1 {
+        flex-direction: row; /* Keep options in a row */
+    }
+
+    .nxt {
+        width: 70%; /* Adjust button width */
+        height: 50px; /* Standard height */
+    }
+
+    .win h1 {
+        font-size: 1.8rem; /* Adjust title size */
+    }
+}
+
+
+
+
+
+/* Mobile Styles for 320px */
+@media (max-width: 320px) {
+    .box {
+        width: 95%; /* Adjust the width to fit smaller screens */
+        padding: 8px; /* Less padding for smaller screens */
+    }
+
+    .ques {
+        font-size: 1.1rem; /* Slightly larger font size for questions */
+    }
+
+    .box1 {
+        flex-direction: column; /* Stack options vertically */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .nxt {
+        width: 90%; /* Full width button for mobile */
+        height: 40px; /* Slightly smaller height */
+    }
+
+    .win h1 {
+        font-size: 1.4rem; /* Larger title for visibility */
+    }
+}
